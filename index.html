@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess</title>
+</head>
+<body>
+    <header>
+        <h1>Number Guess</h1>
+        <p>Enter Min and Max, integers only. Max must be greater than Min. </p>
+        <p>Then think of a number between Min and Max, and we will guess it.</p>
+    </header>
+
+    <main>
+        <div id="startInput">
+            <label for='min'>Min</label>
+            <input type='number' id='min'>
+            <label for='max'>Max</label>
+            <input type='number' id='max'>
+        </div>
+
+    </br>
+
+        <div id="game">
+            <button id='start' onclick="startGame()" onclick="updateGuess()">Start</button>
+
+            <p id='guess'>Our guess will appear here.</p>
+
+            <button id='higher' onclick="higher()">My number is higher.</button>
+            <button id='correct' onclick="correct()">That's my number.</button>
+            <button id='lower' onclick="lower()">My number is lower.</button>
+        </div>
+
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
